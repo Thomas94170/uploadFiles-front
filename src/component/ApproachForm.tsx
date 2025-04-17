@@ -56,7 +56,7 @@ export default function ApproachForm() {
         </MenuHandler>
         <MenuList>
           {Object.keys(documentsByApproach).map((approach) => (
-            <MenuItem key={approach} onClick={() => {
+            <MenuItem className= "text-black hover:bg-gray-100 px-4 py-2 font-medium text-sm m-1" key={approach} onClick={() => {
               setSelectedApproach(approach as ApproachType);
               setFichiers({}); // reset fichiers à chaque changement
             }}>
