@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Menu, MenuHandler, MenuList, MenuItem, Typography } from "@material-tailwind/react";
-import { ApproachType, documentsByApproach, labelFileName, NameFile } from "../../public/faker/fakerDocuments";
+import { ApproachType, documentsByApproach, labelFileName, NameFile, nameOfApproach } from "../../public/faker/fakerDocuments";
 
 export default function ApproachForm() {
   const [selectedApproach, setSelectedApproach] = useState<ApproachType | null>(null);
@@ -51,7 +51,7 @@ export default function ApproachForm() {
       <Menu>
         <MenuHandler>
           <Button className="bg-black text-white rounded-md px-4 py-2">
-            {selectedApproach ? labelFileName[selectedApproach] : "Choisir la démarche"}
+          {selectedApproach ? nameOfApproach[selectedApproach] : "Choisir la démarche"}
           </Button>
         </MenuHandler>
         <MenuList>
