@@ -32,7 +32,7 @@ export const labelFileName: Record<NameFile, string> = {
     CNI_RECTO: "Carte d'identité - Recto",
     CNI_VERSO: "Carte d'identité - Verso",
     QUITTANCE_LOYER: "Quittance de loyer",
-    DECLARATION_PERTE: "Déclaration de perte",
+    DECLARATION_PERTE: "Déclaration de perte.",
     JUSTIFICATIF_DOMICILE: "Justificatif de domicile",
     PHOTO_IDENTITE: "Photo d'identité",
     PERMIS_CONDUIRE: "Permis de conduire",
